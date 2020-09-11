@@ -1,7 +1,4 @@
-package com.ldw.design.patter;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
-import javafx.application.Application;
+package com.ldw.algorithm;
 
 
 /**

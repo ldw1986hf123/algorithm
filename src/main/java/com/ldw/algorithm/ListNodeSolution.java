@@ -1,7 +1,5 @@
-package com.ldw.design.patter;
+package com.ldw.algorithm;
 
-
-import org.w3c.dom.NodeList;
 
 /**
  * 输入一个链表，反转链表后，输出新链表的表头。
@@ -16,10 +14,10 @@ class ListNode {
     }
 }
 
-public class Solution {
+public class ListNodeSolution {
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        ListNodeSolution solution = new ListNodeSolution();
         ListNode head = solution.initList();
 //        solution.printList(head);
         solution.reverseList(head);

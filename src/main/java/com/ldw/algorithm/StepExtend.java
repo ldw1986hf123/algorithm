@@ -1,4 +1,4 @@
-package com.ldw.design.patter;
+package com.ldw.algorithm;
 
 
 /**
