@@ -4,17 +4,11 @@ package com.ldw.dataStruct;
  * 用数组实现栈
  */
 public class StackListInArray {
-    private int max;
-    private int[] myList;
-
-    private StackListInArray(int max) {
-        this.max = max;
-        myList = new int[max];
-    }
+    private int size;
+    private Integer[] myList = new Integer[10];
 
     public void push(int element) {
-        int size=myList.length-1;
-        if (myList.length > max) {
+        if (myList.length < size) {
             //需要扩容
         } else {
             myList[size] = element;
@@ -22,16 +16,21 @@ public class StackListInArray {
         size++;
     }
 
-    public int pop() {
-        int size=myList.length-1;
-        int element = myList[size];
-        size--;
+    public int pop() throws Exception {
+        int element;
+        if (size > 0) {
+            element = myList[size - 1];
+            size--;
+        }
+        else {
+            throw new Exception();
+        }
         return element;
     }
 
 
-    public static void main(String[] args) {
-        StackListInArray stack=new StackListInArray(10);
+    public static void main(String[] args) throws Exception {
+        StackListInArray stack = new StackListInArray();
         stack.push(0);
         stack.push(2);
         stack.push(3);

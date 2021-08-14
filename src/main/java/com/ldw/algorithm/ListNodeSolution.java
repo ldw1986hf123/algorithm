@@ -19,8 +19,10 @@ public class ListNodeSolution {
     public static void main(String[] args) {
         ListNodeSolution solution = new ListNodeSolution();
         ListNode head = solution.initList();
-//        solution.printList(head);
         solution.reverseList(head);
+
+
+//        solution.printList(head);
     }
 
     /**
